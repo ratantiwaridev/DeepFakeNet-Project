@@ -1,0 +1,5 @@
+<form method="POST" enctype="multipart/form-data" action="/predict/">
+    {% csrf_token %}
+    <input type="file" name="image" required>
+    <button type="submit">Check Deepfake</button>
+</form>
